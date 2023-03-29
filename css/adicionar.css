@@ -1,0 +1,145 @@
+.adicionar {
+    background-color: var(--cor-branco2);
+}
+
+.adicionar-formulario__conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    height: auto;
+    padding: 1rem;
+}
+
+.adicionar-subtitulo {
+    font-size: 1rem;
+    font-weight: 700;
+
+    color: var(--cor-grafite);
+}
+
+.adicionar-input {
+    border: none;
+    border-radius: 4px;
+
+    width: 90%;
+
+    padding: 1rem;
+    margin-top: .50rem;
+    margin-bottom: .75rem;
+}
+
+.categorias {
+    border: none;
+    border-radius: 4px;
+
+    width: 100%;
+
+    padding: 1rem;
+    margin-top: .50rem;
+    margin-bottom: .75rem;
+}
+
+.adicionar-input::placeholder {
+    color: var(--cor-cinza);
+    font-family: var(--fonte-principal);
+}
+
+#msgErroNomeProduto, #msgErroPreco, #msgErroPreco {
+    display: none;
+    align-self: center;
+    font-size: 0.8rem;
+    color: #FF0000;
+}
+
+#msgErroDescricao {
+    display: none;
+    margin-bottom: 0.4rem;
+    align-self: center;
+    font-size: 0.8rem;
+    color: #FF0000;
+}
+
+#msgErroFormularioAdicionar{
+    display: none;
+    margin-bottom: 0.4rem;
+    align-self: center;
+    font-size: 0.8rem;
+    color: #FF0000;
+}
+
+.adicionar-botao {
+    width: 98%;
+
+    font-size: 1rem;
+    font-weight: 400;
+
+    text-align: center;
+    color: var(--cor-branco);
+
+    background-color: var(--cor-azul);
+    border: none;
+
+    padding: 1rem;
+    margin-bottom: .60rem;
+}
+
+@media screen and (min-width: 768px) {
+    .adicionar-subtitulo {
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+    .adicionar-formulario__conteudo {
+        padding: 1rem;
+    }
+
+    .adicionar-input {
+        width: 95%;
+    }
+
+    .categorias {
+        width: 99%;
+    }
+
+    .caixa-mensagem__adicionar {
+        width: 95%;
+    }
+
+    .adicionar-botao {
+        width: 99%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .categorias {
+        width: 98%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .adicionar-formulario__conteudo {
+        padding: 3rem 0 3rem 25rem;
+    }
+
+    .adicionar-subtitulo {
+        font-size: 32px;
+        font-weight: 700;
+    }
+
+    .adicionar-input {
+        width: 50%;
+    }
+
+    .categorias {
+        width: 53%;
+    }
+
+    .caixa-mensagem__adicionar {
+        width: 50%;
+    }
+
+    .adicionar-botao {
+        width: 53%;
+    }
+}

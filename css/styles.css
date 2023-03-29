@@ -1,0 +1,50 @@
+@import url(cabecalho.css);
+@import url(banner.css);
+@import url(produtos.css);
+@import url(info.css);
+@import url(login.css);
+@import url(adicionar.css);
+
+
+:root {
+    --fonte-principal: 'Raleway', sans-serif;
+
+    --background-principal: #FFFFFF;
+
+    --cor-branco: #FFFFFF;
+    --cor-branco2: #F5F5F5;
+    --cor-azul-claro: #EAF2FD;
+    --cor-azul: #2A7AE4;
+    --cor-cinza: #A2A2A2;
+    --cor-grafite: #464646;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: var(--fonte-principal);
+    font-size: 0.8rem;
+    font-weight: 400;
+
+    background-color: var(--background-principal);
+}
+.rodape {
+    background-color: var(--cor-branco);
+    text-align: center;
+    padding: 0.8rem;
+    font-size: 0.7rem;
+    font-weight: 500;
+    
+
+    color: var(--cor-grafite);
+}
+
+@media screen and (min-width: 1440px) {
+    .rodape{
+        font-size: 0.8rem;
+    }
+}

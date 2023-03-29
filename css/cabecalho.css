@@ -1,0 +1,248 @@
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+    padding: 0.8rem;
+}
+
+.cabecalho-logo {
+    width: 7rem;
+}
+
+.botao-cabecalho {
+    border: 1px solid var(--cor-azul);
+    color: var(--cor-azul);
+    font-family: var(--fonte-principal);
+    font-size: 0.8rem;
+    font-weight: 600;
+
+    padding: .55rem 2.2rem;
+}
+
+#usuarioLogin {
+    display: none;
+    color: var(--cor-grafite);
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.usuario__info {
+    display: none;
+}
+
+.usuario__info-ativo {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto auto auto;
+    align-items: center;
+    column-gap: 0.4rem;
+    width: 14rem;
+    height: 5.7rem;
+    position: absolute;
+    top: 100%;
+    left: calc(100% - 14rem);
+    padding: 0.4rem;
+    background-color: var(--cor-branco2);
+    box-sizing: border-box;
+}
+
+#info__imagem {
+    grid-column: 1;
+    grid-row: 1 / span 3;
+    width: 95%;
+    height: 70%;
+    border-radius: 50%;
+}
+
+#info__titulo {
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: center;
+    font-weight: 600;
+}
+
+#info__email {
+    grid-column: 2;
+    grid-row: 2;
+    justify-self: center;
+}
+
+#info__botao {
+    grid-column: 2;
+    grid-row: 3;
+    width: 40%;
+    justify-self: center;
+    padding: 0.2rem;
+    border: none;
+    font-size: 0.6rem;
+    background-color: var(--cor-azul);
+    color: var(--cor-branco);
+}
+
+
+/* Página Login */
+
+.cabecalho__login {
+    justify-content: center;
+}
+
+/* Página Produtos */
+.input-cabecalho {
+    display: block;
+    border: none;
+    border-radius: 20px;
+
+    width: 10%;
+    height: 2rem;
+    box-sizing: border-box;
+    padding: 1rem;
+
+    background-image: url('/img/icone/lupa-input.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: var(--cor-branco2);
+    transition: .3s;
+}
+
+.input-cabecalho:hover {
+    width: 60%;
+}
+
+/* Página adicionar produtos */
+.botao-administrador {
+    padding: 0.9rem;
+}
+
+@media screen and (min-width: 768px) {
+    .cabecalho {
+        justify-content: space-around;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    .cabecalho-logo {
+        width: 8rem;
+    }
+
+    .usuario__info-ativo {
+        left: calc(100% - 14rem);
+        top: 100%;
+    }
+
+    #info__botao {
+        font-size: 0.7rem;
+    }
+
+    /* Página login */
+    .cabecalho__login {
+        justify-content: center;
+    }
+
+    /* Página produtos */
+    .input-cabecalho {
+        width: 30%;
+    } 
+
+    .input-cabecalho {
+        display: block;
+        border: none;
+        border-radius: 20px;
+    
+        width: 40%;
+        height: 2rem;
+        box-sizing: border-box;
+        padding: 1rem;
+    
+        background-image: url('/img/icone/lupa-input.svg');
+        background-repeat: no-repeat;
+        background-position: right;
+        background-color: var(--cor-branco2);
+    }
+    
+    .input-cabecalho:hover {
+        width: 40%;
+    }
+
+    .cabecalho__produtos {
+        justify-content: flex-start;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .usuario__info-ativo {
+        left: calc(100% - 19.2rem);
+        top: 100%;
+        height: 5.8rem;
+    }
+
+    /* Página Produtos */
+    .cabecalho__produtos {
+        justify-content: flex-start;
+    }
+
+    .input-cabecalho {
+        width: 35%;
+    }
+
+    .input-cabecalho:hover {
+        width: 35%;
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+    .cabecalho {
+        justify-content: space-around;
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+    .cabecalho-logo {
+        width: 9rem;
+    }
+
+    .botao-cabecalho {
+        padding: 0.9rem 4rem;
+    }
+
+    #usuarioLogin {
+        font-size: 1.1rem;
+    }
+
+    .usuario__info-ativo {
+        left: calc(100% - 26rem);
+        top: 100%;
+        width: 22rem;
+        height: 12rem;
+    }
+
+    #info__titulo {
+        font-size: 1.1rem
+    }
+
+    #info__email {
+        font-size: 1.1rem
+    }
+
+    #info__botao {
+        width: 50%;
+        padding: 0.6rem;
+        font-size: 0.9rem;
+    }
+
+    /* Página Produtos */
+    .imagem__logo {
+        width: 100%;
+    }
+
+    .input-cabecalho {
+        width: 26%;
+    }
+
+    .input-cabecalho:hover {
+        width: 26%;
+    }
+
+}

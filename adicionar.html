@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Produtos | AluraGeek</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <a href="index.html" class="cabecalho-logo"> <img src="img/Logo.svg" alt="Logo da AluraGeek"> </a>
+    </header>
+
+    <main>
+        <section class="adicionar">
+            <form class="adicionar-formulario">
+                <div class="adicionar-formulario__conteudo">
+                    <h2 class="adicionar-subtitulo">Adicionar novo produto</h2>
+                    <input type="url" placeholder="Url da imagem" class="adicionar-input" id="imagem-produto" required>
+                    <select name="categoria" class="categorias" id="categoria-produto" required>
+                        <option value="starwars">Star Wars</option>
+                        <option value="consoles">Consoles</option>
+                        <option value="diversos">Diversos</option>
+                    </select>
+                    <input type="text" placeholder="Nome do produto" class="adicionar-input" id="nome-produto" required>
+                    <span id="msgErroNomeProduto"></span>
+                    <input type="text" placeholder="Preço do produto" class="adicionar-input" id="preco-produto"
+                        required>
+                    <span id="msgErroPreco"></span>
+                    <textarea cols="60" rows="4" class="caixa-mensagem caixa-mensagem__adicionar"
+                        placeholder="Descrição do produto" id="descricao-produto" required></textarea>
+                    <span id="msgErroDescricao"></span>
+                    <span id="msgErroFormularioAdicionar"></span>
+                    <input type="submit" value="Adicionar produto" class="adicionar-botao" id="btnAdicionarProdto">
+                </div>
+            </form>
+        </section>
+
+        <section class="info">
+            <div class="info-conteudo">
+                <div class="info-logo">
+                    <img src="img/Logo.svg" alt="Logo da Aluraa Geek" class="info-logo__imagem">
+                </div>
+                <div class="informacoes">
+                    <a href="#" class="informacoes-link">Quem somos nós</a>
+                    <a href="#" class="informacoes-link">Política de Privacidade</a>
+                    <a href="#" class="informacoes-link">Porgrama fidelidade</a>
+                    <a href="#" class="informacoes-link">Nossas lojas</a>
+                    <a href="#" class="informacoes-link">Quero ser franqueado</a>
+                    <a href="#" class="informacoes-link">Anuncie aqui</a>
+                </div>
+                <form class="info-formulario">
+                    <h3 class="subtitulo-formulario">Fale conosco</h3>
+                    <input type="text" placeholder="Nome" class="input-formulario" id="nome" required>
+                    <span id="msgErroNome"></span>
+                    <textarea cols="60" rows="4" class="caixa-mensagem" placeholder="Escreva sua mensagem"
+                        id="msgUsuario" required></textarea>
+                    <span id="msgErroTexto"></span>
+                    <span id="msgErroFormulario"></span>
+                    <input type="submit" value="Enviar mensagem" class="botao-formulario" id="btnFormulario">
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p class="rodape-texto">Desenvolvido por VitorHugo 2022</p>
+    </footer>
+
+    <script src="app/adicionarProduto.js"></script>
+    <script src="app/faleConosco.js"></script>
+</body>
+
+</html>

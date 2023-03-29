@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraGeek | Produtos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/cabecalho.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header class="cabecalho ">
+        <a href="index.html" class="cabecalho-logo"> <img src="img/Logo.svg" alt="Logo da AluraGeek"
+                class="imagem__logo"> </a>
+        <input type="text" placeholder="O que deseja encontrar?" class="input-cabecalho" id="input-busca">
+    </header>
+
+    <main class="principal-produtos">
+        <section class="produtos">
+            <div class="produtos-cabecalho__produtos">
+                <h2 class="produtos-titulo" id="produtos-titulo">Todos os produtos</h2>
+                <a href="adicionar.html" class="produtos-botao">Adicionar produto</a>
+            </div>
+            <div class="produtos-itens" id="produtos-itens">
+                <!-- <div class="produtos-itens__card itens-card__grid" id="cards-produtos">
+                    <img src="" alt=""
+                        class="imagem-card">
+                    <h3 class="card-titulo"></h3>
+                    <p class="card-preco"></p>
+                    <a href="#" class="card-botao">Ver produto</a>
+                </div> -->
+            </div>
+        </section>
+
+        <section class="info">
+            <div class="info-conteudo">
+                <div class="info-logo">
+                    <img src="img/Logo.svg" alt="Logo da Aluraa Geek" class="info-logo__imagem">
+                </div>
+                <div class="informacoes">
+                    <a href="#" class="informacoes-link">Quem somos nós</a>
+                    <a href="#" class="informacoes-link">Política de Privacidade</a>
+                    <a href="#" class="informacoes-link">Porgrama fidelidade</a>
+                    <a href="#" class="informacoes-link">Nossas lojas</a>
+                    <a href="#" class="informacoes-link">Quero ser franqueado</a>
+                    <a href="#" class="informacoes-link">Anuncie aqui</a>
+                </div>
+                <form class="info-formulario">
+                    <h3 class="subtitulo-formulario">Fale conosco</h3>
+                    <input type="text" placeholder="Nome" class="input-formulario" id="nome" required>
+                    <span id="msgErroNome"></span>
+                    <textarea cols="60" rows="4" class="caixa-mensagem" placeholder="Escreva sua mensagem"
+                        id="msgUsuario" required></textarea>
+                    <span id="msgErroTexto"></span>
+                    <span id="msgErroFormulario"></span>
+                    <input type="submit" value="Enviar mensagem" class="botao-formulario" id="btnFormulario">
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p class="rodape-texto">Desenvolvido por Vitor Hugo 2022</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="app/produtos.js"></script>
+    <script src="app/faleConosco.js"></script>
+</body>
+
+</html>

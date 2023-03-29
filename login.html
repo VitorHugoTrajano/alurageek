@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraGeek | Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header class="cabecalho cabecalho__login">
+        <a href="index.html"> <img src="img/Logo.svg" alt="Logo da AluraGeek" class="cabecalho-logo"></a>
+    </header>
+    <main>
+        <section class="login">
+            <form class="login-formulario" name="f1">
+                <span id="msgLogin"></span>
+
+                <h2 class="login-formulario__subtitulo">Iniciar Sessão</h2>
+                <input type="email" placeholder="Escreva seu email" name="email" class="login-formulario__input"
+                    id="input-email" required>
+                <span id="erroEmail"></span>
+                <input type="password" placeholder="Escreva sua senha"
+                    pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$"
+                    class="login-formulario__input" id="input-senha" required>
+                <span id="erroSenha"></span>
+                <input type="submit" value="Entrar" class="login-formulario__botao" id="input-botao">
+                <span id="spanBtn"></span>
+            </form>
+        </section>
+
+        <section class="info">
+            <div class="info-conteudo">
+                <div class="info-logo">
+                    <img src="img/Logo.svg" alt="Logo da Aluraa Geek" class="info-logo__imagem">
+                </div>
+                <div class="informacoes">
+                    <a href="#" class="informacoes-link">Quem somos nós</a>
+                    <a href="#" class="informacoes-link">Política de Privacidade</a>
+                    <a href="#" class="informacoes-link">Porgrama fidelidade</a>
+                    <a href="#" class="informacoes-link">Nossas lojas</a>
+                    <a href="#" class="informacoes-link">Quero ser franqueado</a>
+                    <a href="#" class="informacoes-link">Anuncie aqui</a>
+                </div>
+                <form class="info-formulario">
+                    <h3 class="subtitulo-formulario">Fale conosco</h3>
+                    <input type="text" placeholder="Nome" class="input-formulario" id="nome" required>
+                    <span id="msgErroNome"></span>
+                    <textarea cols="60" rows="4" class="caixa-mensagem" placeholder="Escreva sua mensagem"
+                        id="msgUsuario" required></textarea>
+                    <span id="msgErroTexto"></span>
+                    <span id="msgErroFormulario"></span>
+                    <input type="submit" value="Enviar mensagem" class="botao-formulario" id="btnFormulario">
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        Desenvolvido por VitorHugo 2022
+    </footer>
+
+    <script src="app/login.js"></script>
+    <script src="app/faleConosco.js"></script>
+</body>
+
+</html>

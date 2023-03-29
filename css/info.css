@@ -1,0 +1,204 @@
+.info {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor-azul-claro);
+
+    padding: 1rem;
+}
+
+.informacoes {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.info-logo__imagem {
+    display: block;
+    width: 7rem;
+    margin: 0 auto;
+}
+
+.informacoes-link {
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 500;
+
+    color: var(--cor-grafite);
+
+    margin-top: .70rem;
+    margin-bottom: .70rem;
+}
+
+.info-formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.subtitulo-formulario {
+    font-size: 0.9rem;
+    font-weight: 700;
+
+    color: var(--cor-grafite);
+
+    margin-top: 1rem;
+}
+
+.input-formulario {
+    border: none;
+    border-radius: 4px;
+
+    width: 90%;
+
+    padding: .75rem;
+    margin-top: 0.5rem;
+}
+
+.input-formulario::placeholder {
+    color: var(--cor-cinza);
+    font-family: var(--fonte-principal);
+}
+
+#msgErroNome {
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    text-align: center;
+    color: #FF0000;
+}
+
+#msgErroTexto {
+    margin-bottom: 0.5rem;
+    font-size: 0.8rem;
+    text-align: center;
+    color: #FF0000;
+    display: none;
+}
+
+#msgErroFormulario {
+    margin-bottom: 0.5rem;
+    font-size: 0.8rem;
+    text-align: center;
+    color: #FF0000;
+    display: none;
+}
+
+.caixa-mensagem {
+    border: none;
+    border-radius: 4px;
+
+    width: 88%;
+
+    padding: 1rem;
+    margin: 0.3rem 0 0.5rem 0;
+}
+
+.caixa-mensagem::placeholder {
+    color: var(--cor-cinza);
+    font-family: var(--fonte-principal);
+}
+
+.botao-formulario {
+    width: 40%;
+
+    text-align: center;
+    color: var(--cor-branco);
+
+    background-color: var(--cor-azul);
+    border: none;
+
+    padding: 0.5rem 0;
+
+    font-size: 0.8rem;
+}
+
+@media screen and (min-width: 768px) {
+    .info {
+        padding: 2rem 1rem;
+    }
+
+    .info-conteudo {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .informacoes {
+        grid-column: 1;
+    }
+
+    .informacoes-imagem {
+        width: 50%;
+    }
+
+    .info-formulario {
+        grid-row: 1 / span 3;
+        grid-column: 2;
+    }
+
+    .subtitulo-formulario {
+        margin-top: 0;
+    }
+
+    .botao-formulario {
+        width: 37%;
+        font-family: var(--fonte-principal);
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    .botao-formulario {
+        width: 33%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .info {
+        padding: 2rem 5rem;
+    }
+
+    .info-conteudo {
+        grid-template-columns: auto auto auto;
+        align-items: baseline;
+    }
+
+    .info-logo {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .info-logo__imagem {
+        padding-left: 3rem;
+        width: 9rem;
+    }
+
+    .informacoes {
+        grid-column: 2;
+        grid-row: 1 / span 3;
+        padding-right: 5rem;
+    }
+
+    .informacoes-link {
+        font-size: 1rem;
+    }
+
+    .subtitulo-formulario {
+        font-size: 1.1rem;
+    }
+
+    .info-formulario {
+        grid-column: 3;
+        grid-row: 1 / span 3;
+    }
+
+    .input-formulario {
+        width: 89%;
+    }
+
+    .botao-formulario {
+        width: 28%;
+        padding: 0.7rem;
+
+        font-size: 0.9rem;
+        font-weight: 400;
+    }
+}

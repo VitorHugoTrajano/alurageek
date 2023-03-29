@@ -1,0 +1,159 @@
+.produtos {
+    padding: 0 1rem;
+}
+
+.produtos-cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 1rem;
+    margin-bottom: .75rem;
+}
+
+.produtos-cabecalho__titulo {
+    color: var(--cor-grafite);
+
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.produtos-cabecalho__botao {
+    display: flex;
+    align-items: center;
+
+    color: var(--cor-azul);
+
+    font-weight: 700;
+}
+
+.botao-icone {
+    margin-left: .5rem;
+}
+
+.produtos-itens {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    margin-bottom: 0.5rem;
+}
+
+.produtos-itens__card {
+    width: 47%;
+    margin-bottom: 1rem;
+}
+
+.itens__card-desktop {
+    display: none;
+}
+
+.imagem-card {
+    width: 100%;
+
+    margin-bottom: .45rem;
+}
+
+.card-titulo {
+    font-weight: 500;
+
+    color: var(--cor-grafite);
+}
+
+.card-preco {
+    font-size: 1rem;
+    font-weight: 700;
+    
+    color: var(--cor-grafite);
+
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+.card-botao {
+    font-weight: 700;
+
+    color: var(--cor-azul);
+}
+
+/* Página de Produtos */
+
+.produtos-titulo {
+    font-size: 1.3rem;
+    font-weight: 700;
+
+    color: var(--cor-grafite);
+
+    margin-bottom: 1.2rem;
+}
+
+.produtos-botao {
+    display: block;
+    color: var(--cor-branco);
+
+    background-color: var(--cor-azul);
+
+    text-align: center;
+
+    width: 36%;
+    padding: 0.8rem 1.1rem;
+    margin-bottom: 1.2rem;
+}
+
+.itens__card-produtos {
+    display: block;
+}
+
+@media screen and (min-width: 768px) {
+    .produtos-cabecalho {
+        margin-top: 2rem;
+        padding: 0 0.5rem;
+    }
+
+    .produtos-itens__card {
+        width: 23%;
+    }
+
+    /* Página produtos */
+    .produtos-cabecalho__produtos {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 0.3rem;
+    }
+
+    .produtos-botao {
+        width: 19.1%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .produtos-botao {
+        width: 17.5%;
+    }
+
+    .produtos-itens__card {
+        width: 23%;
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+    .produtos {
+        padding: 0 8rem;
+    }
+
+    .produtos-itens__card {
+        width: 15.5%;
+    }
+
+    .produtos-botao {
+        width: 11.8%;
+    }
+
+    .itens__card-desktop {
+        display: block;
+    }
+    
+}
