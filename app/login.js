@@ -104,18 +104,18 @@ var listaUser = JSON.parse(localStorage.getItem('usuarioCadastrado') || '[]')
 
 usuarioCadastrado = [{
     nomeCad: 'Paloma',
-    sobrenomeCad: 'Marques',
-    emailCad: 'loma.amaral@gmail.com',
-    senhaCad: '1234Be',
+    sobrenomeCad: 'Mark',
+    emailCad: 'exemplo@gmail.com',
+    senhaCad: '1234Ex',
     imagemCad: 'img/perfil-paloma.webp'
 
 },
 
 {
     nomeCad: 'Bernardo',
-    sobrenomeCad: 'Marques Amaral',
-    emailCad: 'bernardo@gmail.com',
-    senhaCad: '1234Pa',
+    sobrenomeCad: 'Mark Anrral',
+    emailCad: 'exemplo2@gmail.com',
+    senhaCad: '1234Ex',
     imagemCad: 'img/perfil-bernardo.jpg'
 }]
 
