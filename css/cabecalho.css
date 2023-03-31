@@ -33,47 +33,45 @@
 }
 
 .usuario__info-ativo {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    grid-template-rows: auto auto auto;
-    align-items: center;
-    column-gap: 0.4rem;
+    display: flex;
+    justify-content: space-around;
     width: 14rem;
     height: 5.7rem;
     position: absolute;
     top: 100%;
     left: calc(100% - 14rem);
-    padding: 0.4rem;
+    padding: 0.4rem 0;
     background-color: var(--cor-branco2);
     box-sizing: border-box;
 }
 
+.imagem__container {
+    width: 30%;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.info__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
 #info__imagem {
-    grid-column: 1;
-    grid-row: 1 / span 3;
-    width: 95%;
-    height: 70%;
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
 }
 
 #info__titulo {
-    grid-column: 2;
-    grid-row: 1;
-    justify-self: center;
     font-weight: 600;
 }
 
-#info__email {
-    grid-column: 2;
-    grid-row: 2;
-    justify-self: center;
-}
-
 #info__botao {
-    grid-column: 2;
-    grid-row: 3;
     width: 40%;
-    justify-self: center;
     padding: 0.2rem;
     border: none;
     font-size: 0.6rem;
@@ -108,11 +106,6 @@
 
 .input-cabecalho:hover {
     width: 60%;
-}
-
-/* Página adicionar produtos */
-.botao-administrador {
-    padding: 0.9rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -215,7 +208,7 @@
         left: calc(100% - 26rem);
         top: 100%;
         width: 22rem;
-        height: 12rem;
+        height: 10rem;
     }
 
     #info__titulo {
